@@ -1,0 +1,20 @@
+= FrevoOnRails - Site
+
+Site do Grupo de Usuários Ruby/Rails de Pernambuco.
+
+== Uso
+
+  $ bundle              # Instala todas as dependências do app.
+  $ rake db:setup       # Cria e migra o banco e carrega o schema e os seeds.
+  $ rake db:reset       # Faz o mesmo que o db:drop mas dropa e recria o banco antes.
+  $ rake db:test:clone  # Clona o banco de testes baseado no schema do banco atual.
+  $ rake db:drop        # Zera o BD do ambiente atual.
+  $ rails server        # Inicia o servidor. Em seguida acesse http://0.0.0.0:3000.
+  $ rails console       # Abre um console com o aplicativo carregado.
+  $ rake test           # Executa toda a suíte de testes (TDD) com ActiveSupport::TestCase.
+  $ rake about          # Mostra informações do ambiente do app.
+  $ rake stats          # Mostra estatísticas do código do app.
+  $ rake routes         # Mostra todas as rotas do app.
+  $ rake log:clear      # Zera os arquivos de logging.
+  $ rake -T             # Lista todas as demais tarefas disponíveis.
+

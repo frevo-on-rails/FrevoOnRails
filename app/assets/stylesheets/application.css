@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree .
+*/
+
+@font-face{
+  font-family: Titillium Text;
+  font-weight: normal
+  font-style: regular;
+  src:url("");
+}
+
+@font-face{
+  font-family: Titillium Text;
+  font-weight: normal
+  font-style: regular;
+  src:url("");
+}
+
+@font-face{
+  font-family: Titillium Text;
+  font-weight: normal
+  font-style: regular;
+  src:url("");
+}
+
+@font-face{
+  font-family: Titillium Text;
+  font-weight: normal
+  font-style: regular;
+  src:url("");
+}
+
+@font-face{
+  font-family: Titillium Text;
+  font-weight: normal
+  font-style: regular;
+  src:url("");
+}
+
+
+
+.container {
+  width: 960px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+aside {
+  float: right;
+}
