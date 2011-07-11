@@ -1,4 +1,11 @@
 FrevoOnRails::Application.routes.draw do
-  root to: "site#index"
+  devise_for :managers
+
+  #devise_for :admins
+
+
+  resources :posts
+
+  root to: "posts#index"
 
 end

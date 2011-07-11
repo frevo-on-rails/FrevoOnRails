@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<article id="post">
+  <h1><%= link_to @post.title, @post %></h1>
+  <p>postado por <%= @post.author %> às <%= @post.pubdate.strftime("%H:%M") %></p>
+  <time datetime="<%=@post.pubdate.strftime("%Y-%m-%d")%>" pubdate><%= @post.pubdate.strftime("%Y-%m-%d") %></time>
+  <p><%= @post.body %></p>
+  <p>Tags: <%= @post.tags %></p>
+</article>
+
+
+<div id="admin" class="grid_12">
+  <ul>
+    <li><%= link_to 'Editar', edit_post_path(@post) %></li>
+    <li><%= link_to 'Voltar', posts_path %></li>
+    <li><%= link_to 'Destroy', @post, confirm: "Tem certeza?", method: :delete %></li>
+  </ul>
+</div>

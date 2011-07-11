@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+  <section>
+    <h2><%= link_to post.title, post %></h2>
+    <p><%= post.tags %></p>
+    <p><%= post.author %></p>
+    <p><%= post.pubdate %></p>
+  </section>
+<% end %>
+
+<%= link_to 'Novo Post', new_post_path %>

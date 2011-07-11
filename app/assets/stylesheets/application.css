@@ -3,54 +3,111 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
- *= require_tree .
 */
 
-@font-face{
-  font-family: Titillium Text;
-  font-weight: normal
-  font-style: regular;
-  src:url("");
-}
-
-@font-face{
-  font-family: Titillium Text;
-  font-weight: normal
-  font-style: regular;
-  src:url("");
-}
-
-@font-face{
-  font-family: Titillium Text;
-  font-weight: normal
-  font-style: regular;
-  src:url("");
-}
-
-@font-face{
-  font-family: Titillium Text;
-  font-weight: normal
-  font-style: regular;
-  src:url("");
-}
-
-@font-face{
-  font-family: Titillium Text;
-  font-weight: normal
-  font-style: regular;
-  src:url("");
-}
-
-
-
-.container {
-  width: 960px;
-}
+@import url('/assets/reset.css');
+@import url('/assets/typography.css');
 
 body {
-  margin: 0 auto;
+  background: url(/assets/bg.png), url(/assets/bg-peq.png);
+  background-position:top, left bottom;
+  background-repeat: repeat-x, repeat-x;
 }
 
-aside {
-  float: right;
+textarea {width: 500px;}
+
+article {width: 700px;background: #fdfefe;}
+
+article time {
+  margin: 0 0 0 -100px;
+  float: left;
 }
+
+h2 a{
+  font-family: Titillium Text;
+  font-weight: 999;
+  font-size: 36px:
+}
+
+header h1 {color: gray;}
+header h1 span {color: red;}
+
+
+
+header h1 {
+  margin-top: 20px;
+  font-size: 60px;
+  font-family: Titillium Text;
+  font-weight: 400;
+}
+
+article h1 {
+  margin-top: 20px;
+  font-size: 40px;
+  font-family: Titillium Text;
+  font-weight: 999;
+}
+
+article p {
+  font-family: Arial, Helvetica;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+a:hover {
+  text-decoration: none;
+}
+
+#sidebar {float: right;}
+aside {
+  display: none;
+  margin: 0 auto;
+  background: url(/assets/logo.png) no-repeat;
+  background-position: top center;
+  background-color: #fff;
+  float: right;
+  width: 200px;
+}
+
+aside p {
+  text-align: left;
+  width: 300px;
+  font-family: Titillium Text;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Footer */
+
+footer {color: #fff;}
+footer section {background: url(/assets/logo-peq.png) no-repeat left;}
+footer nav{margin: 0 0 95px 0;}
+footer p {float: right; display: inline;}
+footer nav ul li{display: inline-block;}
+
+footer nav ul {
+  float: right;
+  margin-right: 10px;
+  margin-top: 50px;
+  height: 100px;
+}
+
+address {font-family: Titillium Text; font-weight: 250; color: #fff,margin: 0 0 20px 100px;float: left;}
+address span {font-family: Titillium Text, font-weight: 100; color: #999,}
+
+footer nav ul li a{
+  color: #fff;
+  font-size: 14px;
+  font-family: Titillium Text;
+  font-weight: 250;
+  text-decoration: none;
+  display: block;
+  padding: 10px 3px;
+}
+
+footer nav ul li:hover{}
+footer nav ul li:hover a{}
+

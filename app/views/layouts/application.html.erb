@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="pt-br" class="no-js"> <!--<![endif]-->
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,35 +12,41 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js", "application" %>
+    <%= stylesheet_link_tag "application", "960" %>
+    <%= javascript_include_tag "jquery.min", "jquery-ui-1.8.13.custom.min" %>
     <%= csrf_meta_tags %>
   </head>
   <body>
     <div id="container">
       <header class="container_12">
         <hgroup id="logo" class="grid_6">
-          <h1><%= link_to "Frevo On Rails", root_path %></h1>
+          <a href="/"><h1><span>frevo</span> on rails</h1></a>
         </hgroup>
         <section id="social_media" class="grid_6">
         </section>
       </header>
-      <aside>
-        <%= link_to image_tag("logo.png", width: "141" , height: "140"), root_path %>
-      </aside>
+
       <div id="main" class="container_12" role="main">
-        <%= yield %>
+          <%= yield %>
+
+        <aside id="sidebar">
+          <p>Grupo de apoio e divulgação para desenvolvedores de Ruby/Rails de Pernambuco. Navegue também por:</p>
+        </aside>
+
         <footer class="container_12">
-           <section class="grid_12" id="marcas_footer">
+          <section class="grid_12">
+            <nav>
               <ul>
-                <li id="marcas_footer1"><%= link_to "Lei de Incentivo à Cultura", root_path %></li>
-                <li id="marcas_footer2"><%= link_to "Prefeitura de Olinda", root_path %></li>
-                <li id="marcas_footer3"><%= link_to "Execução", root_path %></li>
-                <li id="marcas_footer4"><%= link_to "BNDES", root_path %></li>
-                <li id="marcas_footer5"><%= link_to "Ministério da Cultura", root_path %></li>
+                <li><%= link_to "GitHub", "https://github.com/frevo-on-rails" %></li>
+                <li><%= link_to "Google Groups", "https://groups.google.com/forum/?hl=pt#!forum/frevo-on-rails" %></li>
+                <li><%= link_to "Twitter", "http://twitter.com/#!/FrevoOnRails" %></li>
+                <li><%= link_to "Facebook", "http://www.facebook.com/frevoonrails" %></li>
               </ul>
-            </section>
-          </footer>
+            </nav>
+            <p>Design: Sérgio Fontes</p>
+          </section>
+          <address>frevo on rails<span>, 2011</span></address>
+        </footer>
     </div>
     <script>!window.jQuery && document.write(unescape('%3Cscript src="javascripts/libs/jquery-1.5.1.js"%3E%3C/script%3E'))</script>
     <script src="javascripts/plugins.js"></script>
