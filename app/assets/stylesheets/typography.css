@@ -1,5 +1,11 @@
 @font-face{
   font-family: Titillium Text;
+  font-weight: bold;
+  src:url("/TitilliumText999wt.otf") format('opentype');
+}
+
+@font-face{
+  font-family: Titillium Text;
   font-weight: normal;
   src:url("/TitilliumText1.otf") format('opentype');
 }
@@ -26,11 +32,5 @@
   font-family: Titillium Text;
   font-weight: 800;
   src:url("/TitilliumText800wt.otf") format('opentype');
-}
-
-@font-face{
-  font-family: Titillium Text;
-  font-weight: 999;
-  src:url("/TitilliumText999wt.ttf") format('opentype');
 }
 

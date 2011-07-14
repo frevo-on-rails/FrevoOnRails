@@ -16,44 +16,88 @@ body {
 
 textarea {width: 500px;}
 
-article {width: 700px;background: #fdfefe;}
+article {float: left; width: 709px; background: #fdfefe;}
 
-article time {
-  margin: 0 0 0 -100px;
+.year {
+  font-family: Titillium Text;
+  color: red;
+  font-size: 20px;
+  margin: 0 0 0 -90px;
+  float: left;
+}
+
+.month {
+  font-family: Titillium Text;
+  color: red;
+  font-size: 20px;
+  margin: 10px 0 0 -70px;
+  float: left;
+}
+
+.day {
+  font-family: Titillium Text;
+  color: red;
+  font-size: 20px;
+  margin: 0 0 0 -50px;
   float: left;
 }
 
 h2 a{
   font-family: Titillium Text;
-  font-weight: 999;
+  font-weight: bold;
   font-size: 36px:
 }
 
-header h1 {color: gray;}
-header h1 span {color: red;}
-
-
+header h1 span {color: #b4192b;}
 
 header h1 {
+  color: grey;
   margin-top: 20px;
-  font-size: 60px;
+  margin-bottom: -12px;
+  font-size: 65px;
   font-family: Titillium Text;
   font-weight: 400;
+  text-shadow: 2px 2px 2px #999;
 }
 
-article h1 {
-  margin-top: 20px;
-  font-size: 40px;
+article h2 {
+  margin: 20px 0 0 10px;
+  font-size: 36px;
   font-family: Titillium Text;
-  font-weight: 999;
+
+}
+article h1 {
+  margin: 50px 60px 10px 60px;
+  font-size: 36px;
+  font-family: Titillium Text;
+  font-weight: bold;
+}
+
+#author {color: #2ca5f0;}
+
+article h2 {
+  margin: 50px 60px 10px 60px;
+  font-size: 36px;
+  font-family: Titillium Text;
+  font-weight: bold;
+}
+
+article h1 a {
+  color: #222;
+}
+
+article h2 a {
+  color: #222;
 }
 
 article p {
+  margin: 10px 60px 10px 60px;
   font-family: Arial, Helvetica;
   font-size: 13px;
 }
 
 a {
+  font-family: Titillium Text;
   text-decoration: none;
   color: red;
 }
@@ -63,51 +107,113 @@ a:hover {
 
 #sidebar {float: right;}
 aside {
-  display: none;
-  margin: 0 auto;
-  background: url(/assets/logo.png) no-repeat;
-  background-position: top center;
-  background-color: #fff;
+  border: 0 0 0 4px #000 solid;
+  clear : right;
+  background: rgb(152, 29, 37), url(/assets/logo.png) no-repeat;
+  background-position: left , top center;
+  background-color: rgb(152, 29, 37);
   float: right;
-  width: 200px;
+  position: relative;
+  width: 250px;
+  height: 500px;
+  opacity: 0.7;
 }
 
 aside p {
+  color: #edece9;
+  margin: 2px 22px 0 22px;
   text-align: left;
-  width: 300px;
+  width: 200px;
   font-family: Titillium Text;
   font-weight: 600;
   font-size: 13px;
 }
 
+.logo {
+  background: url('/assets/logo.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 130px 22px 0 22px;
+  margin-top: -56px;
+  text-align: left;
+  width: 200px;
+}
+
+.for_description {
+  padding: 60px 24px 0 22px;
+  margin-top: -40px;
+  text-align: left;
+  width: 200px;
+  font-family: Titillium Text;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+aside nav {margin: 30px 22px 10px 22px;}
+
+aside h3 {
+  font-size: 35px;
+  color: #edece9;
+  font-family: Titillium Text;
+  margin: 30px 22px 0 22px;
+}
+
+aside a {color: #fff;}
+#admin {display: none;}
+.new_post {display: none;}
+
+form {
+  margin: 40px 0 0 0;
+  background-position: left;
+}
+
+.text_field {
+  font-family: Titillium Text;
+  height: 27px;
+  width: 170px;
+  font-size: 15px;
+}
+
+.search_button {
+  width: 40px;
+  height: 35px;
+  border: none;
+  background: url('/assets/icon-search-inactive.png');
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.search_button:hover {
+ background: url('/assets/icon-search-active.png');
+ background-position: left;
+ background-repeat: no-repeat;
+}
+
 /* Footer */
 
-footer {color: #fff;}
-footer section {background: url(/assets/logo-peq.png) no-repeat left;}
-footer nav{margin: 0 0 95px 0;}
-footer p {float: right; display: inline;}
+footer {position: relative;color: #fff;}
+footer section {background: url(/assets/logo-peq.png) no-repeat bottom left;}
+footer nav{margin: 0 0 75px 0;}
+footer p {margin: 0 3px 0 0; clear: right; font-size: 11px; font-family: Titillium Text; font-weight: 400; float: right;}
+footer p span {font-family: Titillium Text; font-weight: 100; color: #999;}
 footer nav ul li{display: inline-block;}
 
 footer nav ul {
   float: right;
-  margin-right: 10px;
-  margin-top: 50px;
-  height: 100px;
+  margin: 50px 1px 0 0;
+  height: 34px;
 }
 
-address {font-family: Titillium Text; font-weight: 250; color: #fff,margin: 0 0 20px 100px;float: left;}
-address span {font-family: Titillium Text, font-weight: 100; color: #999,}
+#who {font-family: Titillium Text; float: left; font-size: 120%; margin-top: -20px; margin-left: 60px;};
+#who span {font-family: Titillium Text, font-size: 200%; font-weight: 100; color: #999,}
 
 footer nav ul li a{
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   font-family: Titillium Text;
   font-weight: 250;
   text-decoration: none;
   display: block;
-  padding: 10px 3px;
+  padding: 10px 2px;
 }
-
-footer nav ul li:hover{}
-footer nav ul li:hover a{}
 

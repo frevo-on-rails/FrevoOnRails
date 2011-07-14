@@ -1,10 +1,13 @@
 <% @posts.each do |post| %>
-  <section>
+  <article id="post">
     <h2><%= link_to post.title, post %></h2>
+    <p>postado por <span id="author"><%= post.author %></span> às <%= post.pubdate.strftime("%H:%M") %></p>
+    <time datetime="<%=post.pubdate.strftime("%Y-%B-%d")%>" class="year" pubdate><%= post.pubdate.strftime("%Y") %></time>
+    <time class="month"><%= post.pubdate.strftime("%b") %></time>
+    <time class="day"><%= post.pubdate.strftime("%d") %></time>
+    <p><%= post.body %></p>
     <p><%= post.tags %></p>
-    <p><%= post.author %></p>
-    <p><%= post.pubdate %></p>
-  </section>
+  </article>
 <% end %>
 
-<%= link_to 'Novo Post', new_post_path %>
+<%= link_to 'Novo Post', new_post_path,class: "new_post" %>
